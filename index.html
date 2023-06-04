@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="calc.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="calc">
+        <h4>Calculator</h4>
+        <div class="math_input">
+            <input type="number" value="" id="math_input" placeholder="Enter the first Number"/>
+        
+            <input type="number" value="" id="math_input2" placeholder="Enter the second Number"/>
+        
+            <input type="number" value="" id="math_result" placeholder="Your Result"/>
+        </div>
+        <div class="math">
+            <input class="btn" type="button" value="+" onclick="calc(this)"/>
+            <input class="btn" type="button" value="-" onclick="calc(this)"/>
+            <input class="btn" type="button" value="*" onclick="calc(this)"/>
+            <input class="btn" type="button" value="/" onclick="calc(this)"/>
+        </div>
+    </div>
+    <script>
+         function calc(i){
+            var x= Number(document.getElementById("math_input").value);
+            var y= Number(document.getElementById("math_input2").value);
+            var z= i.value;
+            if (z=="+")
+                res=x + y;
+            else if (z=="*")
+                res=x * y;
+            else if (z=="-")
+                res=x - y;
+            else if (z=="/")
+                res=x / y;
+            else if((x="")|| (y= "")){
+                document.getElementById("math_result").value = ("Invalid Input");
+            }
+            // else
+            //     alert("Please Enter vallid Number");
+            document.getElementById("math_result").value = (`Result is : ${res.toFixed(2)}`);
+        
+         }
+    </script>
+</body>
+</html>

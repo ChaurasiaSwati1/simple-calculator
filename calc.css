@@ -1,0 +1,75 @@
+body{
+margin: 0;
+padding: 0;
+
+}
+.bg-primary{
+    background-color: rgb(130, 184, 216) !important;
+}
+.calc,
+.game{
+    padding: 25px;
+    width: 300px;
+    min-height: 250px;
+    /* height: 400px; */
+    display: block;
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(130, 184, 216);
+    border: 25px groove rgb(77, 129, 160);
+}
+ h4{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.math{
+    display: flex;
+    justify-content: space-between;
+}
+.math_input{
+    display: flex;
+    /* min-height: 200px; */
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.math_input input{
+    padding: 12px;
+    border: 2px solid rgb(77, 129, 160);
+    border-radius: 10px;
+    color: #0a1e35;
+    font-weight: 500;
+    font-size: 15px;
+    max-width: 100%;
+    background-color: rgb(130, 184, 216);
+    margin-bottom: 10px;
+}
+.math_input input:focus{
+    outline: none;
+}
+.math .btn{
+    border-radius: 10px;
+    color: #0a1e35;
+    font-weight: 600;
+    font-size: 18px;
+    width: 60px;
+    justify-content: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: rgb(130, 184, 216);
+    background: radial-gradient(circle, rgb(119, 232, 240) 0%, rgb(102, 247, 203) 75%, rgb(122, 215, 228) 99%);
+    border: 10px groove rgb(130, 184, 216);
+}
+/* #res{
+    font-size: 40px;
+    font-weight: 600;
+} */
